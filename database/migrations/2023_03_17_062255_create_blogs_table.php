@@ -21,14 +21,14 @@ return new class extends Migration
             // Request columns
             $table->string('random_id')->unique();
             $table->string('blog_date');
-            $table->unsignedBigInteger('master_blog_id');
+            $table->unsignedBigInteger('master_blog_id')->nullable();
             $table->foreign('master_blog_id')->references('id')->on('blog_masters')->onDelete('cascade');
             $table->string('title');
             $table->string('slug_url');
             $table->longText('short_content');
             $table->string('meta_keywords');
             $table->longText('blog_content');
-            $table->string('quotes');
+            $table->string('quotes')->nullable();
             $table->longText('blog_image');
             $table->longText('image_alt');
             $table->string('writer_name')->default('Zwork Technology - Admin');

@@ -50,7 +50,7 @@
                         <span>Blog</span>
                     </a>
                 </li>
-                <li class="{{ Route::is('blog.comment.index','blog.comment.edit') ? 'mm-active' : '' }}">
+                {{-- <li class="{{ Route::is('blog.comment.index','blog.comment.edit') ? 'mm-active' : '' }}">
                     <a href="{{ route('blog.comment.index') }}" class="waves-effect">
                         <i class="uil-comment-message"></i>
                         <span>Comment</span>
@@ -67,7 +67,7 @@
                         <i class="uil-message"></i>
                         <span>Enquiry</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </div>
         <!-- Sidebar -->

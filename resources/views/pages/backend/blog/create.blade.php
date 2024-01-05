@@ -31,7 +31,7 @@
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
                                                 Master Blog Tag </label>
                                             <div class="col-sm-9">
-                                                <select class="form-control js-example-basic-single" name="master_blog_id" required>
+                                                <select class="form-control js-example-basic-single" name="master_blog_id">
                                                     <option value="" disabled selected hidden class="text-muted">
                                                         Select master blog</option>
                                                     @foreach ($blogmaster as $blogmasters)
@@ -42,77 +42,77 @@
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Title</label>
+                                                Title <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="title" placeholder="Enter here " required>
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Slug URL</label>
+                                                Slug URL <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="slug_url" placeholder="Enter here " required>
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Quotes</label>
+                                                Quotes </label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="quotes" placeholder="Enter here " required>
+                                                <input type="text" class="form-control" name="quotes" placeholder="Enter here ">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Writer Name</label>
+                                                Writer Name <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="writer_name" placeholder="Enter here ">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Writer Mail Address</label>
+                                                Writer Mail Address <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="email" class="form-control" name="writer_mail_address" placeholder="Enter here " value="blog@zworktechnology.com">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Writer Web Address</label>
+                                                Writer Web Address <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="url" class="form-control" name="writer_web_address_address" placeholder="Enter here " value="https://zworktechnology.com">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Blog Image</label>
+                                                Blog Image <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="file" class="form-control" name="blog_image" placeholder="Enter here " required>
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Image Alt</label>
+                                                Image Alt <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="image_alt" placeholder="Enter here " required>
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Keywords</label>
+                                                Keywords <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="meta_keywords" placeholder="Enter here ">
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Short Content</label>
+                                                Short Content <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <textarea type="text" class="form-control" name="short_content" placeholder="Enter here "></textarea>
                                             </div>
                                         </div>
                                         <div class="row mb-4">
                                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">
-                                                Blog Content</label>
+                                                Blog Content <span style="color: red;">*</span></label>
                                             <div class="col-sm-9">
                                                 <textarea id="myeditorinstance" type="text" class="form-control" name="blog_content" placeholder="Enter here "></textarea>
                                             </div>

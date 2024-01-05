@@ -1,1 +1,1 @@
-@include('pages.frontend.index')
+<p>Welcome</p>

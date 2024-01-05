@@ -70,9 +70,9 @@
                                 <thead>
                                     <tr>
                                         <th>Sl. No</th>
-                                        <th>Blog Master</th>
+                                        <th>Date </th>
                                         <th>Title</th>
-                                        <th>Pined</th>
+                                        <th>Pinned</th>
                                         <th>Active Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -81,17 +81,17 @@
                                     @foreach ($data as $keydata => $datas)
                                     <tr>
                                         <td>{{ ++$keydata }}</td>
-                                        <td>{{ $datas->blogmaster->master_name }}</td>
+                                        <td>{{ $datas->blog_date }}</td>
                                         <td>{{ $datas->title }}</td>
                                         @if ($datas->pined == 1)
-                                        <td style="color:green">Pined</td>
+                                        <td style="color:green">Pinned</td>
                                         @else
-                                        <td style="color:red">Not Pined</td>
+                                        <td style="color:red">Not Pinned</td>
                                         @endif
                                         @if ($datas->active_status == 0)
                                         <td style="color:green">Active</td>
                                         @else
-                                        <td style="color:red">In Active</td>
+                                        <td style="color:red">In-Active</td>
                                         @endif
                                         <td>
                                             <ul class="list-unstyled hstack gap-1 mb-0">

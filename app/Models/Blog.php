@@ -31,17 +31,17 @@ class Blog extends Model
         'pined'
     ];
 
-    public static function boot()
-    {
-        Parent::boot();
+    // public static function boot()
+    // {
+    //     Parent::boot();
 
-        static::created(function ($item) {
+    //     static::created(function ($item) {
 
-            $to_submited_author = $item->writer_mail_address;
+    //         $to_submited_author = $item->writer_mail_address;
 
-            Mail::to($to_submited_author)->send(new BlogAuthorMail ($item));
-        });
-    }
+    //         Mail::to($to_submited_author)->send(new BlogAuthorMail ($item));
+    //     });
+    // }
 
     public function blogmaster()
     {
